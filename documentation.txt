@@ -1,0 +1,18 @@
+Bugs
+- Descritpiton
+- steps to reproduce
+- expected result
+- actual result
+- enviroment sections
+
+1) Losses keeps incrementing even after a win
+2) refresh does not reset score
+
+Test Case
+- descrption of Test
+- steps of the Test
+- postconditions
+
+1) test draw button
+    - it should give you 5 random non-repeating robots
+    - should say "choose 2" above robots
