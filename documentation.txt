@@ -1,12 +1,31 @@
 Bugs
-- Descritpiton
-- steps to reproduce
-- expected result
-- actual result
-- enviroment sections
 
-1) Losses keeps incrementing even after a win
+1) "See All Bots" button doesn't work
+Description: 
+    When "See All Bots" button is pressed, nothing happens and we receive a error.
+steps to reproduce: 
+    1) Click "See All Bots", and ensure that nothing is updated in the page.
+expected result:
+    We should see all the bots after clicking "See All Bots"
+enviroments:
+    - browser that works
+    - server has to be running
+
 2) refresh does not reset score
+Description: 
+    When user clicks refresh button, the page refreshes except the score board.
+steps to reproduce:
+    1. click draw button
+    2. click add duo button on two robots
+    3. click the duel button
+    4. Ensure score board is updated (not 0 - 0)
+    5. click refresh page
+    6. the page refreshes, but the score does not
+expected result:
+    after a click on refresh, the score board should reset to 0-0
+enviroments:
+    - browser that works
+    - server has to be running
 
 Test Case
 - descrption of Test
@@ -14,5 +33,16 @@ Test Case
 - postconditions
 
 1) test draw button
-    - it should give you 5 random non-repeating robots
-    - should say "choose 2" above robots
+Description: 
+    After clicking Draw button, user should see five random non 
+    repeating robots with Add to duo option on each and a text that says 
+     "choose 2" above robot list.
+Steps of the test:
+    1. click "Draw" button
+    2. ensure 5 non-repeating robots are shown
+    3. ensure title says "choose 2!"
+    4. ensure each robot has a "add to duo" button
+    5. ensure "Draw" button is removed
+postconditions:
+    - 5 random robots are shown with the add to duo option.
+    
